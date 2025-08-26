@@ -31,13 +31,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://aygaepypiusloubktinn.supabase.co/storage/v1/object/public/documents/9a446660-1208-4fd7-a6a0-8d2b47357eb6.jpg" // Add your profile picture path here
+              src="https://aygaepypiusloubktinn.supabase.co/storage/v1/object/public/documents/9a446660-1208-4fd7-a6a0-8d2b47357eb6.jpg"
               alt="Jude Ivan Besmonte portrait"
-              width="240"
-              height="240"
+              width="300"
+              height="300"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-32 w-32 rounded-full object-cover"
             />
           </motion.div>
 
@@ -51,26 +51,41 @@ export default function Intro() {
               delay: 0.1,
               duration: 0.7,
             }}
-          >
-            👋
-          </motion.span>
+          ></motion.span>
         </div>
       </div>
 
-      <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+      <motion.div
+        className="mt-8 px-4"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hi, I'm Jude Ivan Besmonte.</span> I'm an{" "}
-        <span className="font-bold">aspiring full-stack developer</span> from{" "}
-        <span className="font-bold">the Philippines 🇵🇭</span>. I enjoy building{" "}
-        <span className="italic">dynamic & user-friendly applications</span>. My
-        focus is <span className="underline">React (Next.js)</span>.
-      </motion.h1>
+        {/* Main Title */}
+        <h1 className="text-4xl sm:text-6xl font-sans font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+          Hi, I'm Jude Ivan Besmonte
+        </h1>
+
+        {/* Summary Description */}
+        <p className="text-lg sm:text-xl font-sans text-gray-700 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto">
+          A Junior Full-Stack Developer from{" "}
+          <span className="font-semibold text-blue-600 dark:text-blue-400">
+            the Philippines 🇵🇭
+          </span>{" "}
+          who loves learning and creativity. I thrive on building{" "}
+          <span className="font-semibold text-purple-600 dark:text-purple-400">
+            dynamic, user-friendly applications
+          </span>{" "}
+          and enjoy exploring both front-end and back-end technologies. My focus
+          is{" "}
+          <span className="font-semibold text-emerald-600 dark:text-emerald-400">
+            React (Next.js)
+          </span>{" "}
+          and modern web development.
+        </p>
+      </motion.div>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-base font-medium mt-10"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -96,22 +111,6 @@ export default function Intro() {
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-        </a>
-
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://linkedin.com" // Update with your LinkedIn URL
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com" // Update with your GitHub URL
-          target="_blank"
-        >
-          <FaGithubSquare />
         </a>
       </motion.div>
     </section>
