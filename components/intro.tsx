@@ -31,10 +31,10 @@ export default function Intro() {
             }}
           >
             <Image
-              src="" // Add your profile picture path here
+              src="https://aygaepypiusloubktinn.supabase.co/storage/v1/object/public/documents/9a446660-1208-4fd7-a6a0-8d2b47357eb6.jpg" // Add your profile picture path here
               alt="Jude Ivan Besmonte portrait"
-              width="192"
-              height="192"
+              width="240"
+              height="240"
               quality="95"
               priority={true}
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
